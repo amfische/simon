@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simon</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div id="game-circle">
+		<div id="buttons">
+			<div id="green"></div>
+			<div id="red"></div>
+			<div id="yellow"></div>
+			<div id="blue"></div>
+		</div>
+		<div id="controls-circle">
+			<h1>Simon<sup>&reg;</sup></h1>
+			<div id="settings">
+				<div id="count">
+					<input type="text" disabled value="00">
+					<p>Count</p>
+				</div>
+				<div id="start">
+					<button></button>
+					<p>Start</p>
+				</div>
+				<div id="strict">
+					<div id="strict-light"></div>
+					<button></button>
+					<p>Strict</p>
+				</div>
+			</div>
+			<div class="switch">
+			  <input type="checkbox" id="on-off">
+			  <label class="slider round" for="on-off"></label>
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/simon.js"></script>
+	<script src="js/ui.js"></script>
+	<script src="js/controls.js"></script>
+
+</body>
+</html>
