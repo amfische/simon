@@ -12,17 +12,21 @@ const config = {
 				}
 			},
 			{
-				test: /\.(scss|css)$/,
+				test: /\.(scss)$/,
 				use: [
 					MiniCssExtractPlugin.loader,
-					{
-						loader: "css-loader", // translates CSS to CommonJS
-						options: {} 
-					}, 
-					{
-						loader: "sass-loader", // compiles Sass to CSS
-						options: {}
-					}
+					{ loader: "css-loader", options: {} }, // translates CSS to CommonJS
+					{ loader: "postcss-loader", options: {} },
+					// {
+					// 	loader: "postcss-loader",
+					// 	options: {
+					// 		ident: "postcss",
+					// 		plugins: (loader) => [
+					// 			require('autoprefixer')({ browsers: ['defaults']})
+					// 		]
+					// 	}
+					// },
+					{ loader: "sass-loader", options: {} } // compiles Sass to CSS
 				]
 			},
 			{
