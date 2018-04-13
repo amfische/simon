@@ -7,10 +7,11 @@ body {
 }
 
 .simon {
+	.columns {
+		align-items: center;
+	}
 	.columns .column {
-		display: flex;
-		margin-top: 45px;
-		margin-bottom: 45px;
+		display: table;
 	}
 	.board {
     width: 100%;
